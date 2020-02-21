@@ -1,4 +1,57 @@
+body {
+  margin: 0;
+}
 h1 {
-  color: blue;
+  margin-top: 8vh;
+  color: white;
+  display: inline;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index:500;
+  background: rgb(207, 210, 216);
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-content: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+  text-transform: 1s;
+}
+ul {
+  display: inline;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 1.5rem;
 }
 
+li {
+  display: inline;
+}
+
+.ocean {
+  width: 100vw;
+}
+.title {
+  background-image: url('https://images.unsplash.com/photo-1560860484-bcb661a7797a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.logo {
+  height: 15vh;
+}
+#education {
+  padding-top: 10vh;
+}
