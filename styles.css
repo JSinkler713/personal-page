@@ -129,13 +129,13 @@ li {
   height: 100vh;
   text-align: center;
   display: grid;
-  grid-template-columns: [profilepic] [content];
-  grid-template-rows: 0% [header] 15% [content] 85%;
+  grid-template-columns: 5% [profilepic] 1fr 20% [experience] 1fr 5%;
+  grid-template-rows: 0% [header] 15% [experience] 85%;
 }
 
 .experience-header {
    grid-row: header;
-   grid-column: 2 / 4;
+   grid-column: 4 / 5;
 }
 .image-holder {
   grid-row: header / content;
@@ -149,7 +149,14 @@ li {
 #experience h2 {
   color: white;
 }
-
+.experience-content {
+  text-align: left;
+  color: white;
+  grid-row: experience;
+  grid-column: experience;
+  font-size: 1.5rem;
+  font-family: 'Tomorrow', sans-serif;
+}
 p {
   font-family: 'Open Sans';
 }
