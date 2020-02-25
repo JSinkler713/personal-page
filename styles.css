@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 section {
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -145,6 +148,7 @@ li {
 .profile-image {
   border-radius:10vw;
   width: 40vw;
+  padding-left: 5vw;
 }
 #experience h2 {
   color: white;
