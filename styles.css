@@ -36,7 +36,7 @@ header {
   position: fixed;
   top: 0;
   z-index:500;
-  background: rgb(207, 210, 216);
+  background: rgb(191, 196, 200);
   width: 100vw;
   height: 8vh;
   display: flex;
@@ -70,6 +70,8 @@ li {
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-color: rgb(146, 143, 138);
+  background-blend-mode: darken;
 }
 
 .logo {
@@ -166,7 +168,6 @@ p {
 }
 
 .hobbies {
-  background-color: rgb(184, 207, 219);
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -177,3 +178,40 @@ p {
    grid-row: header;
    grid-column: 4 / 5;
  }
+.projects {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+  grid-template-rows:5% [header] 15% [projects] 75% 5%;
+}
+
+.projects-header {
+   grid-row: 0 / header;
+   grid-column: 4 / 5;
+   padding-top: 5px;
+ }
+.project {
+  border: 3px solid gray;
+  padding: 2px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.25);
+  grid-row: projects;
+}
+
+.project1 {
+  grid-column: 2 / 3;
+}
+.project2 {
+  grid-column: 4 / 5;
+}
+.project3 {
+  grid-column: 6 / 7;
+}
+.project-image-holder {
+  height: 75%;
+ }
+.project-image {
+  width: 100%;
+}
