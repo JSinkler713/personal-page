@@ -10,51 +10,58 @@ body {
   margin: 0;
   overflow: scroll;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
 }
 .nav {
-  box-shadow: 0 3px 5px 0 hsla(0,0%,80%,.5);
-  border-bottom: 1px solid #cbc2c2;
+  height: 7vh;
 }
 
 h1 {
-  margin-top: 8vh;
+  margin-top: 10vh;
   color: white;
   display: inline;
-  font-family: 'Cabin', sans-serif;
+  font-family:'Cabin Sketch', cursive;
   font-size: 4rem;
   text-align: center;
 }
 h2 {
-  margin-top: 6vh;
+  margin-top: 7vh;
   color: black;
   display: inline;
   font-family: 'Cabin', sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
 }
 header {
   position: fixed;
   top: 0;
   z-index:500;
-  background: rgb(191, 196, 200);
   width: 100vw;
-  height: 8vh;
+  height: 40px;
+  background-color: rgb(104 101 108);
+  background-color: #737373; 
   display: flex;
   align-content: center;
   flex-direction: row-reverse;
 }
+.intro-statement {
+  color: white;
+}
+
 a {
+  font-size: 24px;
   color: white;
   text-decoration: none;
+  transition: 1s linear text-decoration;
 }
 a:hover {
-  color: gray;
-  text-transform: 1s;
+  color: whitesmoke;
+  transform: 1.2em;
+  text-decoration: underline;
 }
 ul {
   display: inline;
   font-family: 'Tomorrow', sans-serif;
-  font-size: 1.5rem;
 }
 
 li {
@@ -70,7 +77,8 @@ li {
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: rgb(146, 143, 138);
+  justify-content: center;
+  background-color: rgba(0, 0, 20, 0.5);
   background-blend-mode: darken;
 }
 
@@ -92,10 +100,16 @@ li {
 .education-header {
    grid-row: header;
    grid-column: 2 / 4;
+  font-size: 3em;
+  color: black;
  }
 #education h3 {
-  margin-bottom: 1px;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid black;
+}
+#education p {
+  padding-top: 0;
 }
 .ga {
   grid-column: logo;
@@ -105,6 +119,8 @@ li {
   grid-column: description;
   grid-row: ga;
   text-align: left;
+  word-spacing: 5px;
+  line-height: 1.5;
 }
 .udacity {
   grid-column: logo;
@@ -114,6 +130,8 @@ li {
   grid-column: description;
   grid-row: udacity;
   text-align: left;
+  word-spacing: 5px;
+  line-height: 1.5;
 }
 .humboldt {
   grid-column: logo;
@@ -123,77 +141,72 @@ li {
   grid-column: description;
   grid-row: humboldt;
   text-align: left;
+  word-spacing: 5px;
+  line-height: 1.5;
 }
 
 #experience {
+  background-color: #f7f7f7;
   padding-top: 8vh;
-  background: linear-gradient(80deg, rgb(244, 244, 244) 50%, rgb(58, 74, 107) 50%);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   text-align: center;
-  display: grid;
-  grid-template-columns: 5% [profilepic] 1fr 20% [experience] 1fr 5%;
-  grid-template-rows: 0% [header] 15% [experience] 85%;
+  display: flex-column;
 }
 
-.experience-header {
-   grid-row: header;
-   grid-column: 4 / 5;
+.experience-header h2 {
+  font-size: 3em;
+  color: black;
 }
 .image-holder {
-  grid-row: header / content;
-  grid-column-start: auto;
   padding-top: 5vh;
+  background-blend-mode: darken;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile-image {
-  border-radius:10vw;
-  width: 40vw;
-  padding-left: 5vw;
+  border-radius:5vw;
+  background-blend-mode: darken;
+}
+.cover {
+  width: 30vw;
+  object-fit: cover;
 }
 #experience h2 {
-  color: white;
+  color: black;
 }
 .experience-content {
-  text-align: left;
-  color: white;
-  grid-row: experience;
-  grid-column: experience;
+  text-align: center;
+  color: black;
   font-size: 1.5rem;
   font-family: 'Tomorrow', sans-serif;
 }
 p {
   font-family: 'Open Sans';
 }
-
-.hobbies {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-  grid-template-rows:5% [header] 15% [hobbies] 80%;
-}
-.hobbies-header {
-   grid-row: header;
-   grid-column: 4 / 5;
- }
 .projects {
-  width: 100vw;
+  background-color:  #D9D9D9;
+  width: 96vw;
+  padding: 0 2vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-  grid-template-rows:5% [header] 15% [projects] 75% 5%;
+  grid-template-columns:  3fr 3fr 3fr ;
+  grid-template-rows:10% [header]  [projects] 55%  35%;
+  grid-gap: 2%;
 }
 
 .projects-header {
    grid-row: 0 / header;
-   grid-column: 4 / 5;
+   grid-column: 2/3;
    padding-top: 5px;
+  font-size: 3em;
+  color: black;
  }
 .project {
+  background-color: #f1f1f1;
   border: 3px solid gray;
-  padding: 2px;
+  padding: 25px 2px;
   border-radius: 5px;
   margin-bottom: 15px;
   box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.25);
@@ -201,17 +214,21 @@ p {
 }
 
 .project1 {
-  grid-column: 2 / 3;
+  grid-column: 1/2;
 }
 .project2 {
-  grid-column: 4 / 5;
+  grid-column: 2/3;
 }
 .project3 {
-  grid-column: 6 / 7;
+  grid-column: 3/4;
 }
 .project-image-holder {
   height: 75%;
  }
 .project-image {
   width: 100%;
+}
+.material-icons {
+  font-size: 36px !important;
+  color: black;
 }

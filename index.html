@@ -3,6 +3,9 @@
   <head>
     <title>James Sinkler</title>
     <link href='./styles.css' rel='stylesheet' />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -20,10 +23,13 @@
     </div>
     <div id='experience'>
       <div class='experience-header'>
-        <h2>About</h2>
+        <h2>About Me</h2>
+        <p> Educator, Learner, Problem Solver</p>
       </div>
       <div class='image-holder'>
-        <img class='profile-image' src='./image.png' alt='profile'>
+        <div class='profile-image'>
+          <image class='cover' src='/image.png' />
+        </div>
       </div>
       <div class='experience-content'>
         <p>Experience developing well designed, user intuitive, responsive web applications</p>
@@ -61,30 +67,33 @@
         </p>
       </div>
     </div>
-    <div class="hobbies" id='hobbies'>
-      <h2 class='hobbies-header'>Hobbies</h2>
-    </div>
     <div class='projects' id='projects'>
-      <h2 class='projects-header'>Projects</h2>
+      <h2 class='projects-header'>Portfolio</h2>
       <div class='project-description project project1'>
-        <h3>Swello</h3>
+        <h3>Swello API</h3>
         <div className='project-image-holder'>
           <img id='project-image-1' class='project-image' src='./swello-erd.png' alt='swello'>
         </div>
         <div>
           <p class='project-description'>
-          This was an app focuse on building out an API with CRUD functionality. There was some Front-End built using React. The focus was on working with ERD and different tables to leverage the use of Express in JavaScript on the backend.</p><p>GithubLink</p>
+          This was an app focused on building out an API with CRUD functionality. There was some Front-End built using React. The focus was on working with backends databases and express node.js servers.
+          </p>
+          <a href='https://github.com/JSinkler713/surf-API' /><img src='./GitHub-Mark-32px.png' /></a>
         </div>
       </div>
       <div class='project-description project project2'>
-        <h3>MovieReels</h3>
+        <h3>Weather Report</h3>
         <div className='project-image-holder'>
-          <img class='project-image' src='./movie-reels.png' alt='movie-reels'>
+          <video autoplay muted controls class='project-image' src='./WeatherReport.mov' alt='movie-reels'>
         </div>
         <div>
           <p class='project-description'>
-            This was a full-stack application with a SQL backend, external API, and a frontend built using React. It gives users a chance to save movies in different playlists or <em>'Movie Reels'</em> for later reference.
+            A React front-end project that consumes an external API for weather data. The data is then parsed and organized to give the user an easily readbale weather report.
           </p>
+          <a href='https://github.com/JSinkler713/weather-report' /><img src='./GitHub-Mark-32px.png' /></a>
+          <a href='https://weather-report-sinkler.herokuapp.com' /><i class="link large material-icons">insert_link</i>
+</a>
+
         </div>
       </div>
       <div class='project-description project project3'>
